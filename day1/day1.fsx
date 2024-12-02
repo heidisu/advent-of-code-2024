@@ -13,9 +13,7 @@ let readFile () =
 
 let (l1, l2) = readFile ()
 let task1 =
-    let l1s = List.sort l1
-    let l2s = List.sort l2
-    List.zip l1s l2s
+    List.zip (List.sort l1) (List.sort l2)
     |> List.map (fun (a, b) -> abs (a - b))
     |> List.sum
 let task2 =
