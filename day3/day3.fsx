@@ -22,6 +22,7 @@ let task1 =
     |> List.map (fun i -> i.Value)
     |> List.map parseMul
     |> List.sum
+
 let task2 =
     let matches = getMatches  text pattern
     let do_matches = getMatches text do_pattern
