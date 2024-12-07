@@ -9,7 +9,7 @@ let readFile () =
         let numberParts = parts[1].Trim().Split(" ") |> Array.toList |> List.map int64
         (testValue, numberParts))
 
-let rec concat (x: int64) (y: int64) = 
+let concat (x: int64) (y: int64) = 
     (string x) + (string y) |> int64
 
 let rec testEquation operations test (acc: int64 list) numbers = 
