@@ -29,6 +29,7 @@ let calculateTestSum operators =
     |> List.filter snd
     |> List.map fst
     |> List.sum
+
 let task1 = calculateTestSum [(+); (*)]
 let task2 = calculateTestSum [(+); (*); concat]
 
